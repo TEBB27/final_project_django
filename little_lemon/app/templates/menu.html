@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Menu{% endblock %}
+{% block content %}
+<h1 style="text-align: center; margin-top: 25px;">Menu</h1>
+    <p>Discover an extraordinary culinary adventure at Little Lemon's menu page. Immerse yourself in a carefully curated selection of dishes designed to tantalize your taste buds and elevate your dining experience.</p>
+    <ul>
+    {% for item in menu %}
+    <li>
+        <a href="{% url 'menu_item' id=item.id %}">name : {{item.name}}</a><br>
+        <a href="{% url 'menu_item' id=item.id %}">price : {{item.price}}</a><br>
+    </li>
+    {% endfor %}
+    </ul>
+{% endblock %}

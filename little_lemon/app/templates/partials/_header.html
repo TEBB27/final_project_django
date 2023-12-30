@@ -1,0 +1,53 @@
+<header>
+    <h1>Little Lemon</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index'%}">Home</a></li>
+            <li><a href="{% url 'about'%}">About</a></li>
+            <li><a href="{% url 'menu'%}">Menu</a></li>
+            <li><a href="{% url 'booking'%}">Book</a></li>
+        </ul>
+    </nav>
+</header>
+<style>
+    body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(173,255,0,0.9);
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ecf0f1;
+}
+
+</style>
